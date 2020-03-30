@@ -160,7 +160,7 @@ $plansHtml = getPlansHtml($plans, $testing);
             }
             #description-subhead {
                 text-align: center;
-                font-size: 1.1em;
+                font-size: 1.2em;
                 font-weight: bold;
             }
             #description-text {
@@ -170,7 +170,7 @@ $plansHtml = getPlansHtml($plans, $testing);
             .plan {
                 margin: 10px auto;
                 padding: 22px;
-                width: 400px;
+                width: 300px;
                 border: 1px solid grey;
                 flex-grow: 1;
                 font-weight: bold;
@@ -193,8 +193,8 @@ $plansHtml = getPlansHtml($plans, $testing);
             <div id="error-message"></div>
             <h2 id="primary-header">Please Support Us by Subscribing</h2>
             <div id="description">
-                <h3 id="description-subhead">Your contribution supports our valuable work.</h3>
-                <p id="description-text">Thank you very much. We sincerely appreciate your support of our effort. Please choose a plan below:</p>
+                <h3 id="description-subhead">Your contribution supports our work.</h3>
+                <p id="description-text">Thank you very much for your consideration. Your support enables us to continue our work on this project. Please choose a plan below:</p>
             </div>
         </header>
         <main>
