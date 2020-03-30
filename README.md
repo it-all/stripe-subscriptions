@@ -1,4 +1,5 @@
-# A Checkout Page for Stripe Subscriptions  
+# A Simple Landing Page for Stripe Subscriptions  
+This uses an array of your Stripe subscription plans to generate the HTML and JavaScript necessary to redirect your site visitors to the Stripe checkout upon plan selection.  
   
 ## Usage  
 Copy .env.example to .env  
