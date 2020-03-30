@@ -8,100 +8,100 @@ $dotenv->load();
 $testing = true;
 
 $plans = [
-	[
-		'name' => 'Plan 1',
+    [
+        'name' => 'Plan 1',
         'price' => 1,
         'frequency' => 'month',
-		'perks' => [
-			'A great big virtual hug',
-		],
-		'stripeId' => $_ENV['STRIPE_PLAN1_ID_LIVE'],
-		'stripeTestId' => $_ENV['STRIPE_PLAN1_ID_TEST'],
-	],
+        'perks' => [
+            'A great big virtual hug',
+        ],
+        'stripeId' => $_ENV['STRIPE_PLAN1_ID_LIVE'],
+        'stripeTestId' => $_ENV['STRIPE_PLAN1_ID_TEST'],
+    ],
 
-	[
-		'name' => 'Plan 2',
-		'price' => 10,
+    [
+        'name' => 'Plan 2',
+        'price' => 10,
         'frequency' => 'month',
-		'perks' => [
-			'A great big virtual hug',
-			'Something else 1',
-		],
-		'stripeId' => $_ENV['STRIPE_PLAN2_ID_LIVE'],
-		'stripeTestId' => $_ENV['STRIPE_PLAN2_ID_TEST'],
-	],
+        'perks' => [
+            'A great big virtual hug',
+            'Something else 1',
+        ],
+        'stripeId' => $_ENV['STRIPE_PLAN2_ID_LIVE'],
+        'stripeTestId' => $_ENV['STRIPE_PLAN2_ID_TEST'],
+    ],
 
-	[
-		'name' => 'Plan 3',
-		'price' => 25,
+    [
+        'name' => 'Plan 3',
+        'price' => 25,
         'frequency' => 'month',
-		'perks' => [
-			'Everything in Plan 2 +',
-			'Something else 2',
-		],
-		'stripeId' => $_ENV['STRIPE_PLAN3_ID_LIVE'],
-		'stripeTestId' => $_ENV['STRIPE_PLAN3_ID_TEST'],
-	],
+        'perks' => [
+            'Everything in Plan 2 +',
+            'Something else 2',
+        ],
+        'stripeId' => $_ENV['STRIPE_PLAN3_ID_LIVE'],
+        'stripeTestId' => $_ENV['STRIPE_PLAN3_ID_TEST'],
+    ],
 
-	[
-		'name' => 'Plan 4',
-		'price' => 50,
+    [
+        'name' => 'Plan 4',
+        'price' => 50,
         'frequency' => 'month',
-		'perks' => [
-			'Everything in Plan 3 +',
-			'Something else 3',
-		],
-		'stripeId' => $_ENV['STRIPE_PLAN4_ID_LIVE'],
-		'stripeTestId' => $_ENV['STRIPE_PLAN4_ID_TEST'],
-	],
+        'perks' => [
+            'Everything in Plan 3 +',
+            'Something else 3',
+        ],
+        'stripeId' => $_ENV['STRIPE_PLAN4_ID_LIVE'],
+        'stripeTestId' => $_ENV['STRIPE_PLAN4_ID_TEST'],
+    ],
 
-	[
-		'name' => 'Plan 5',
-		'price' => 100,
+    [
+        'name' => 'Plan 5',
+        'price' => 100,
         'frequency' => 'month',
-		'perks' => [
-			'Everything in Plan 4 +',
-			'Something else 4',
-		],
-		'stripeId' => $_ENV['STRIPE_PLAN5_ID_LIVE'],
-		'stripeTestId' => $_ENV['STRIPE_PLAN5_ID_TEST'],
-	],
+        'perks' => [
+            'Everything in Plan 4 +',
+            'Something else 4',
+        ],
+        'stripeId' => $_ENV['STRIPE_PLAN5_ID_LIVE'],
+        'stripeTestId' => $_ENV['STRIPE_PLAN5_ID_TEST'],
+    ],
 
-	[
-		'name' => 'Plan 6',
-		'price' => 250,
+    [
+        'name' => 'Plan 6',
+        'price' => 250,
         'frequency' => 'month',
-		'perks' => [
-			'Everything in Plan 5 +',
-			'Something else 5',
-		],
-		'stripeId' => $_ENV['STRIPE_PLAN6_ID_LIVE'],
-		'stripeTestId' => $_ENV['STRIPE_PLAN6_ID_TEST'],
-	],
+        'perks' => [
+            'Everything in Plan 5 +',
+            'Something else 5',
+        ],
+        'stripeId' => $_ENV['STRIPE_PLAN6_ID_LIVE'],
+        'stripeTestId' => $_ENV['STRIPE_PLAN6_ID_TEST'],
+    ],
 
-	[
-		'name' => 'Plan 7',
-		'price' => 500,
+    [
+        'name' => 'Plan 7',
+        'price' => 500,
         'frequency' => 'month',
-		'perks' => [
-			'Everything in Plan 6 +',
-			'Something else 6',
-		],
-		'stripeId' => $_ENV['STRIPE_PLAN7_ID_LIVE'],
-		'stripeTestId' => $_ENV['STRIPE_PLAN7_ID_TEST'],
-	],
+        'perks' => [
+            'Everything in Plan 6 +',
+            'Something else 6',
+        ],
+        'stripeId' => $_ENV['STRIPE_PLAN7_ID_LIVE'],
+        'stripeTestId' => $_ENV['STRIPE_PLAN7_ID_TEST'],
+    ],
 
-	[
-		'name' => 'Plan 8',
-		'price' => 1000,
+    [
+        'name' => 'Plan 8',
+        'price' => 1000,
         'frequency' => 'month',
-		'perks' => [
-			'Everything in Plan 7 +',
-			'Something else 7',
-		],
-		'stripeId' => $_ENV['STRIPE_PLAN8_ID_LIVE'],
-		'stripeTestId' => $_ENV['STRIPE_PLAN8_ID_TEST'],
-	],
+        'perks' => [
+            'Everything in Plan 7 +',
+            'Something else 7',
+        ],
+        'stripeId' => $_ENV['STRIPE_PLAN8_ID_LIVE'],
+        'stripeTestId' => $_ENV['STRIPE_PLAN8_ID_TEST'],
+    ],
 ];
 /** end config */
 
@@ -114,9 +114,9 @@ $canceledUrlPage = "$page?canceled";
 $successDiv = '';
 $canceledDiv = '';
 if (isset($_GET['success'])) {
-	$successDiv = getSuccessDiv();
+    $successDiv = getSuccessDiv();
 } elseif (isset($_GET['canceled'])) {
-	$canceledDiv = getCanceledDiv();
+    $canceledDiv = getCanceledDiv();
 }
 
 $plansHtml = getPlansHtml($plans, $testing);
@@ -238,49 +238,49 @@ $plansHtml = getPlansHtml($plans, $testing);
 
 function getPlansHtml(array $plans, bool $isTest = false): string 
 {
-	$plansHtml = '';
-	for ($i = 0; $i <= count($plans) - 1; ++$i) {
-		$plansHtml .= getPlanHtml($plans[$i], $isTest);
-	}
-	return $plansHtml;
+    $plansHtml = '';
+    for ($i = 0; $i <= count($plans) - 1; ++$i) {
+        $plansHtml .= getPlanHtml($plans[$i], $isTest);
+    }
+    return $plansHtml;
 }
 
 function getPlanHtml(array $plan, bool $isTest = false): string 
 {
-	$name = $plan['name'];
+    $name = $plan['name'];
     $price = $plan['price'];
     $frequency = $plan['frequency'];
-	$perks = implode("<br>", $plan['perks']); /** use getPerks($plan['perks']); for customization */
-	$stripeId = $isTest ? $plan['stripeTestId'] : $plan['stripeId'];
-	if (mb_strlen($stripeId) == 0) {
-		return '';
-	}
+    $perks = implode("<br>", $plan['perks']); /** use getPerks($plan['perks']); for customization */
+    $stripeId = $isTest ? $plan['stripeTestId'] : $plan['stripeId'];
+    if (mb_strlen($stripeId) == 0) {
+        return '';
+    }
 
-	return <<<EOT
+    return <<<EOT
 <div class="plan">
-	$name<br>
-	$$price per $frequency<br>
-	$perks<br>
-	<br>
-	<button id="$stripeId" class="checkout-button" role="link">Join Now</button>
+    $name<br>
+    $$price per $frequency<br>
+    $perks<br>
+    <br>
+    <button id="$stripeId" class="checkout-button" role="link">Join Now</button>
 </div>
 EOT;
 }
 
 function getSuccessDiv(): string 
 {
-	return <<<EOT
+    return <<<EOT
 <div id="success">
-	<h1>Subscribed. Thank you!!</h1>
+    <h1>Subscribed. Thank you!!</h1>
 </div>
 EOT;
 }
 
 function getCanceledDiv(): string 
 {
-	return <<<EOT
+    return <<<EOT
 <div id="canceled">
-	<h1>&raquo; Payment canceled. Please try again.</h1>
+    <h1>&raquo; Payment canceled. Please try again.</h1>
 </div>
 EOT;
 }
@@ -288,9 +288,9 @@ EOT;
 /** not currently used */
 function getPerks(array $perks): string 
 {
-	$perks = '';
-	foreach ($perks as $perk) {
-		$perks .= $perk . '<br>';
-	}
-	return $perks;
+    $perks = '';
+    foreach ($perks as $perk) {
+        $perks .= $perk . '<br>';
+    }
+    return $perks;
 }
