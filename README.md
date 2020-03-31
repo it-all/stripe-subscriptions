@@ -1,5 +1,5 @@
 # A Simple Landing Page for Stripe Subscriptions  
-This uses an array of your [Stripe](https://stripe.com) subscription plans to generate the HTML and JavaScript necessary to redirect your site visitors to the Stripe checkout upon plan selection.  
+This uses an array of your [Stripe](https://stripe.com) subscription plans to generate the HTML and JavaScript necessary to redirect your site visitors to the Stripe checkout upon plan selection. It also receives and displays success, cancellation, and error messages.
   
 ## Usage  
 Copy .env.example to .env  
