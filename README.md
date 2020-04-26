@@ -2,7 +2,7 @@
 This uses an array of your [Stripe](https://stripe.com) subscription plans to generate the HTML and JavaScript necessary to redirect your site visitors to the Stripe checkout upon plan selection. It also receives and displays success, cancellation, and error messages.
   
 ## Requirements  
-PHP 7.1+ ([Nullable Types](https://www.php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types))  
+PHP 7.0+ (Type Hinting)  
 [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv) 4.1+  
   
 ## Usage  
