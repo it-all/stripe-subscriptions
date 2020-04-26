@@ -1,4 +1,19 @@
 {
+    "license": "MIT",
+    "name": "it-all/stripe-subscriptions",
+    "description": "A Simple Landing Page for Stripe Subscriptions",
+    "keywords": ["stripe", "subscriptions", "ecommerce", "memberships"],
+    "homepage": "https://github.com/it-all/stripe-subscriptions",
+    "authors": [
+        {
+            "name": "it-all",
+            "email": "greg@it-all.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/it-all/stripe-subscriptions/issues",
+        "docs": "https://github.com/it-all/stripe-subscriptions/blob/master/README.md"
+    },
     "require": {
         "vlucas/phpdotenv": "^4.1"
     }
