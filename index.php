@@ -138,7 +138,7 @@ $plansHtml = getPlansHtml($plans, $testing);
                 align-content: space-around;
             }
             #success, #canceled {
-                width: 440px;
+                width: 550px;
                 margin: 0 auto;
                 border: 3px solid;
                 text-align: center;
